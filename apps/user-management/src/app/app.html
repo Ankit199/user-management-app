@@ -1,0 +1,27 @@
+<mat-toolbar color="primary" class="app-toolbar">
+  <span class="app-title">User Management System</span>
+  
+  <span class="spacer"></span>
+  
+  <ng-container *ngIf="isAuthenticated$ | async">
+    <span class="welcome-text" *ngIf="currentUser$ | async as user">
+      Welcome, {{ user.username }}!
+    </span>
+    <button mat-button routerLink="/users" routerLinkActive="active-link">
+      <mat-icon>people</mat-icon>
+      Users
+    </button>
+    <button mat-button routerLink="/users/new" routerLinkActive="active-link">
+      <mat-icon>person_add</mat-icon>
+      Add User
+    </button>
+    <button mat-button (click)="logout()" class="logout-btn">
+      <mat-icon>logout</mat-icon>
+      Logout
+    </button>
+  </ng-container>
+</mat-toolbar>
+
+<main class="main-content">
+  <router-outlet></router-outlet>
+</main>

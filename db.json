@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "johndoe",
+      "email": "john@example.com",
+      "job-role": "gd"
+    },
+    {
+      "id": "2",
+      "username": "janesmith",
+      "email": "jane@example.com",
+      "job-role": "gd"
+    },
+    {
+      "id": "3",
+      "username": "bobjohnson",
+      "email": "bob@example.com",
+      "job-role": "qa"
+    },
+    {
+      "id": "e498",
+      "username": "Ankit",
+      "email": "Ankit@gmail.com",
+      "job-role": "tech"
+    }
+  ]
+}
